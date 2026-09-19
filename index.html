@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#090909">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-7nN5tyI5wCA0ohcrndLAJI4vXwz09nclOU/Wj6jHvJ4=' 'sha256-xkDo+HezDQtlRBLnFYIzTa21nkWEiiw/sBhHP8V9Z8w=' 'sha256-8HJ6QZwdPAP7Tgh6RIoH8WfLjKVr8/iLcE6YbXBkE+I=' 'sha256-prCSQOyqwa8vSsWeJSBR5LGEllI1KXi4wrCY4UkPMSI=' 'wasm-unsafe-eval' blob: https://cdn.jsdelivr.net/npm/@wllama/wllama@2.3.7/; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://cdn.jsdelivr.net/npm/@wllama/wllama@2.3.7/ https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF/ https://*.hf.co https://*.huggingface.co; media-src 'self' data: blob:; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; worker-src blob:; upgrade-insecure-requests;">
-<meta name="eclipse-build" content="bruce-vision-2026-09-19-r27">
+<meta name="eclipse-build" content="bruce-vision-refined-2026-09-19-r29">
 <meta name="referrer" content="no-referrer">
-<meta name="description" content="Eclipse Essence — clothing, digital art, visualization, and speculative design for creators who want full control of their vision.">
+<meta name="description" content="Eclipse Essence — original digital art, wearable visual language, character worlds, creative tools, and a local AI friend built around Bruce’s evolving vision.">
 <title>Eclipse Essence — Design Your Vision</title>
 <style>
 :root{
@@ -114,6 +114,18 @@ h2{font-size:clamp(36px,5vw,70px);line-height:.95;letter-spacing:-.05em;margin:0
 @media(max-width:900px){.aiIntro,.aiShell{grid-template-columns:1fr}.aiLog{height:350px}}
 @media(max-width:650px){.visionAI{padding:82px 20px}.aiChat,.aiTools{padding:15px}.aiComposer{grid-template-columns:1fr}.aiComposer button{min-height:46px}}
 
+
+/* r29 vision refinement: hierarchy, accessibility, and creative bridges */
+.skipLink{position:fixed;z-index:2147483000;left:14px;top:14px;transform:translateY(-180%);background:#f4f1e8;color:#090909;padding:11px 14px;border-radius:8px;font-size:12px;font-weight:800;letter-spacing:.08em;transition:transform .2s ease}.skipLink:focus{transform:none}
+:where(a,button,input,select,textarea):focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+section[id]{scroll-margin-top:92px}
+.visionThread{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#0b0b0b;padding:0 28px}.visionThreadIn{max-width:var(--max);margin:auto;display:grid;grid-template-columns:repeat(5,1fr)}.visionThread a{min-height:110px;padding:21px 18px;border-right:1px solid var(--line);display:flex;flex-direction:column;justify-content:center;transition:background .25s var(--ease),transform .25s var(--ease)}.visionThread a:first-child{border-left:1px solid var(--line)}.visionThread a:hover{background:#111;transform:translateY(-2px)}.visionThread span{font-size:9px;color:var(--gold);letter-spacing:.18em}.visionThread b{font-size:14px;letter-spacing:.08em;margin:5px 0 3px}.visionThread small{font-size:10px;color:#77736b;letter-spacing:.06em}
+.visionAsk{margin-top:32px;border:1px solid rgba(215,181,109,.24);background:linear-gradient(135deg,rgba(215,181,109,.055),rgba(127,167,255,.025));padding:18px 20px;display:flex;gap:20px;align-items:center;justify-content:space-between}.visionAsk div{display:flex;flex-direction:column;gap:4px}.visionAsk small{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}.visionAsk strong{font-size:14px;font-weight:650;color:#d6d2c8}.visionAsk .btn{flex:0 0 auto}
+.commerceStatus{display:inline-flex;align-items:center;min-height:38px;padding:8px 11px;margin-top:18px;border:1px solid rgba(215,181,109,.24);color:#a9a59b;font-size:10px;letter-spacing:.09em;text-transform:uppercase}
+.portfolio-manifesto{max-width:1040px}.visionAI{background:radial-gradient(circle at 85% 15%,rgba(127,167,255,.055),transparent 28%),#080808}.aiIntro h2{color:#f4f1e8}
+@media(max-width:900px){.visionThread{overflow-x:auto;padding:0 20px}.visionThreadIn{min-width:760px}.visionAsk{align-items:flex-start;flex-direction:column}.visionAsk .btn{width:100%;text-align:center}.navlinks{gap:18px}}
+@media(max-width:650px){.visionThread{padding:0}.visionThreadIn{min-width:680px}.visionThread a{min-height:96px;padding:16px 14px}.navin{padding:0 20px}.btn{min-height:46px}.aiQuick button{min-height:44px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal,.btn,.cardart svg,.portfolio-open img,.galleryopen img,.visionThread a,.skipLink{transition:none!important;animation:none!important;transform:none!important}}
 </style>
 <script type="application/json" id="design-manifest">{&quot;brand&quot;: &quot;Eclipse Essence&quot;, &quot;focus&quot;: [&quot;clothing&quot;, &quot;digital art&quot;, &quot;visualization&quot;, &quot;speculative design&quot;], &quot;audience&quot;: [&quot;illustrators&quot;, &quot;designers&quot;, &quot;animators&quot;, &quot;architects&quot;], &quot;principle&quot;: &quot;Give creators full control of their vision.&quot;, &quot;visual_direction&quot;: [&quot;geometric&quot;, &quot;editorial&quot;, &quot;technical&quot;, &quot;dark&quot;, &quot;minimal&quot;, &quot;high-contrast&quot;], &quot;content_boundaries&quot;: [&quot;design first&quot;, &quot;art first&quot;, &quot;visualization first&quot;, &quot;avoid doctrinal framing&quot;]}</script><style id="r26-action-feedback">
 button:not(:disabled),a.btn,a.forgeTop,a.ghost,[role="button"]:not([aria-disabled="true"]){-webkit-tap-highlight-color:transparent;touch-action:manipulation}
@@ -123,11 +135,12 @@ button:not(:disabled),a.btn,a.forgeTop,a.ghost,[role="button"]:not([aria-disable
 </style>
 </head>
 <body>
+<a class="skipLink" href="#top">Skip to main content</a>
 <header class="nav">
   <div class="navin">
     <a class="logo" href="#top">ECLIPSE <span>ESSENCE</span></a>
-    <nav class="navlinks">
-      <a href="#organic-art">Digital Art</a><a href="#spiritual-armour">Clothing</a><a href="#character-worlds">Characters</a><a href="#bruce-vision">Bruce_Vision</a><a href="#lab">Visual Lab</a>
+    <nav class="navlinks" aria-label="Primary navigation">
+      <a href="#organic-art">Vision</a><a href="#spiritual-armour">Armour</a><a href="#character-worlds">Worlds</a><a href="#bruce-vision">Bruce_Vision</a><a href="#lab">Lab</a>
     </nav>
     <button class="menu" id="menuToggle" aria-label="Open navigation" type="button">MENU</button>
   </div>
@@ -140,18 +153,29 @@ button:not(:disabled),a.btn,a.forgeTop,a.ghost,[role="button"]:not([aria-disable
       <div class="kicker">Clothing / Digital Art / Visual Design</div>
       <h1>DESIGN<br>THE <em>VISION.</em></h1>
       <p class="lede">Eclipse Essence is a visual design house built around one idea: give imagination room to become tangible. Wear it. Draw it. Animate it. Build it. Push the concept until the form finally matches the vision.</p>
-      <div class="actions"><a class="btn primary" href="#organic-art">Explore the work</a><a class="btn" href="#lab">Enter the visual lab</a></div>
+      <div class="actions"><a class="btn primary" href="#organic-art">Enter the vision</a><a class="btn" href="#bruce-vision">Talk with Bruce_Vision</a></div>
     </div>
     <div class="heroart reveal" id="heroArt"></div>
   </div>
 </section>
 
 
+
+<section class="visionThread" aria-label="Eclipse Essence creative path">
+  <div class="visionThreadIn">
+    <a href="#organic-art"><span>01</span><b>Vision</b><small>Organic digital art</small></a>
+    <a href="#spiritual-armour"><span>02</span><b>Materialize</b><small>Spiritual Armour</small></a>
+    <a href="#character-worlds"><span>03</span><b>World</b><small>Characters + stories</small></a>
+    <a href="#bruce-vision"><span>04</span><b>Talk</b><small>Bruce_Vision</small></a>
+    <a href="#lab"><span>05</span><b>Refine</b><small>Visual Lab</small></a>
+  </div>
+</section>
+
 <!-- ECLIPSE VISION: permanently visible portfolio additions -->
 <section class="portfolio-section portfolio-art" id="organic-art">
  <div class="wrap">
   <div class="portfolio-head reveal"><div><div class="eyebrow">01 / The Vision</div><h2>Organic Digital Art</h2></div><p class="portfolio-count">09 original works / always visible</p></div>
-  <p class="portfolio-manifesto reveal">My organic art and designs begin as raw ideas, sketches and visual experiments that I shaped through color, composition symbolism, and the digital craftsmanship. Each piece is created to turn imagination into something tangible, encouraging artists, designers, and creators to trust their vision, explore their originality and bring their own ideas to life.</p>
+  <p class="portfolio-manifesto reveal">My organic art and designs begin as raw ideas, sketches and visual experiments that I shape through color, composition, symbolism, and digital craftsmanship. Each piece is created to turn imagination into something tangible—encouraging artists, designers, and creators to trust their vision, explore their originality, and bring their own ideas to life.</p>
   <div class="portfolio-grid art-grid"><figure class="portfolio-card reveal"><button class="portfolio-open" type="button" aria-label="Enlarge Organic Vision 1"><img loading="lazy" decoding="async" src="digital-art/IMG_1058.jpeg" alt="Original Eclipse Vision digital artwork by Yashua 1"></button><figcaption><span>Organic Vision / 01</span><small>Eclipse Essence</small></figcaption></figure>
 <figure class="portfolio-card reveal"><button class="portfolio-open" type="button" aria-label="Enlarge Organic Vision 2"><img loading="lazy" decoding="async" src="digital-art/IMG_1232(1).jpeg" alt="Original Eclipse Vision digital artwork by Yashua 2"></button><figcaption><span>Organic Vision / 02</span><small>Eclipse Essence</small></figcaption></figure>
 <figure class="portfolio-card reveal"><button class="portfolio-open" type="button" aria-label="Enlarge Organic Vision 3"><img loading="lazy" decoding="async" src="digital-art/IMG_1238(1).jpeg" alt="Original Eclipse Vision digital artwork by Yashua 3"></button><figcaption><span>Organic Vision / 03</span><small>Eclipse Essence</small></figcaption></figure>
@@ -161,6 +185,7 @@ button:not(:disabled),a.btn,a.forgeTop,a.ghost,[role="button"]:not([aria-disable
 <figure class="portfolio-card reveal"><button class="portfolio-open" type="button" aria-label="Enlarge Organic Vision 7"><img loading="lazy" decoding="async" src="digital-art/IMG_5987.jpeg" alt="Original Eclipse Vision digital artwork by Yashua 7"></button><figcaption><span>Organic Vision / 07</span><small>Eclipse Essence</small></figcaption></figure>
 <figure class="portfolio-card reveal"><button class="portfolio-open" type="button" aria-label="Enlarge Organic Vision 8"><img loading="lazy" decoding="async" src="digital-art/Untitled_-_January_1,_2026_16.29.jpeg" alt="Original Eclipse Vision digital artwork by Yashua 8"></button><figcaption><span>Organic Vision / 08</span><small>Eclipse Essence</small></figcaption></figure>
 <figure class="portfolio-card reveal"><button class="portfolio-open" type="button" aria-label="Enlarge Organic Vision 9"><img loading="lazy" decoding="async" src="digital-art/IMG_1391.jpeg" alt="Original Eclipse Vision digital artwork by Yashua 9"></button><figcaption><span>Organic Vision / 09</span><small>Eclipse Essence</small></figcaption></figure></div>
+  <div class="visionAsk reveal"><div><small>Talk through the vision</small><strong>Turn what you saw into your own direction.</strong></div><a class="btn" href="#bruce-vision" data-bv-prompt="I’m looking at the Organic Digital Art chapter. Help me use Bruce’s philosophy of color, composition, symbolism, and experimentation as a starting point for an original idea of my own. Ask what I’m trying to express before suggesting directions.">Explore with Bruce_Vision</a></div>
  </div>
 </section>
 <section class="portfolio-section portfolio-armour" id="spiritual-armour">
@@ -178,6 +203,7 @@ button:not(:disabled),a.btn,a.forgeTop,a.ghost,[role="button"]:not([aria-disable
 <figure class="portfolio-card reveal"><button class="portfolio-open" type="button" aria-label="Enlarge Wearable Art 9"><img loading="lazy" decoding="async" src="clothing/IMG_4325.jpeg" alt="Eclipse Essence clothing brand original garment 9"></button><figcaption><span>Wearable Art / 09</span><small>Eclipse Essence</small></figcaption></figure>
 <figure class="portfolio-card reveal"><button class="portfolio-open" type="button" aria-label="Enlarge Wearable Art 10"><img loading="lazy" decoding="async" src="clothing/IMG_6437(1).jpeg" alt="Eclipse Essence clothing brand original garment 10"></button><figcaption><span>Wearable Art / 10</span><small>Eclipse Essence</small></figcaption></figure></div>
   <blockquote class="portfolio-quote reveal">“From imagination to protection — art does not have to remain on the canvas. It can become something you carry with you.”</blockquote>
+  <div class="visionAsk reveal"><div><small>Talk through the materialization</small><strong>Translate an idea into something wearable without losing its meaning.</strong></div><a class="btn" href="#bruce-vision" data-bv-prompt="I’m looking at Spiritual Armour. Help me translate an original idea into a garment through silhouette, placement, symbolism, material, and color. Keep the decisions mine and explain the tradeoffs of each direction.">Build with Bruce_Vision</a></div>
  </div>
 </section>
 <section class="portfolio-section portfolio-characters" id="character-worlds">
@@ -189,14 +215,57 @@ button:not(:disabled),a.btn,a.forgeTop,a.ghost,[role="button"]:not([aria-disable
 <figure class="portfolio-card reveal"><button class="portfolio-open" type="button" aria-label="Enlarge Character World 3"><img loading="lazy" decoding="async" src="characters/IMG_1339.jpeg" alt="Original Eclipse Vision character design by Yashua 3"></button><figcaption><span>Character World / 03</span><small>Eclipse Essence</small></figcaption></figure>
 <figure class="portfolio-card reveal"><button class="portfolio-open" type="button" aria-label="Enlarge Character World 4"><img loading="lazy" decoding="async" src="characters/IMG_5188.jpeg" alt="Original Eclipse Vision character design by Yashua 4"></button><figcaption><span>Character World / 04</span><small>Eclipse Essence</small></figcaption></figure></div>
   <div class="portfolio-closing reveal"><div class="eyebrow">Keep Building</div><h2>Your world does not have to arrive all at once.</h2><p>One sketch can become a symbol. One symbol can become a garment. One character can become an entire universe. <strong>Trust the pace of your own imagination.</strong> The goal is not to create like everyone else—it is to keep giving your own perspective somewhere to exist.</p></div>
+  <div class="visionAsk reveal"><div><small>Talk through the world</small><strong>Build characters from values, contradictions, symbols, and story.</strong></div><a class="btn" href="#bruce-vision" data-bv-prompt="I’m looking at Character Worlds. Help me develop an original character by starting with one core value, one contradiction, one visual symbol, and the world that would challenge them. Don’t take over the character—help me discover it.">Worldbuild with Bruce_Vision</a></div>
  </div>
 </section>
 <div class="portfolio-lightbox" id="portfolioLightbox" aria-hidden="true"><button type="button" class="portfolio-close" aria-label="Close enlarged image">CLOSE ×</button><img alt="Enlarged Eclipse Vision work"></div>
 
+<section class="visionAI" id="bruce-vision">
+  <div class="aiWrap">
+    <div class="aiIntro reveal">
+      <div><div class="eyebrow">04 / Creative friend</div><h2>BRUCE_VISION.</h2></div>
+      <div><p>A local creative friend built into Eclipse Vision. Bring a feeling, a garment concept, a character, a visual problem, a language question, or simply talk through what is on your mind.</p><p>Bruce_Vision helps translate mood into direction, challenge an idea without taking it over, and connect the different rooms of Bruce’s world. Your judgment stays yours, and the AI will not pretend it can see artwork you have not described.</p></div>
+    </div>
+    <div class="aiShell reveal">
+      <div class="aiChat">
+        <div class="aiStatus"><span class="aiDot" id="bruceVisionDot"></span><span id="bruceVisionStatus">Local AI is off. Load it when you want to talk.</span></div>
+        <div class="aiLog" id="bruceVisionLog" aria-live="polite" aria-label="Bruce Vision conversation"><div class="aiBubble bot">I’m Bruce_Vision. Load the local AI and talk to me like a friend—about the work, a feeling, a character, a garment, a language, or whatever you are trying to figure out.</div></div>
+        <div class="aiComposer">
+          <textarea id="bruceVisionInput" maxlength="1800" placeholder="Talk to Bruce_Vision…" aria-label="Message Bruce Vision"></textarea>
+          <button class="btn primary" id="bruceVisionSend" type="button">Send</button>
+        </div>
+        <div class="aiQuick" aria-label="Conversation starters">
+          <button type="button" data-bv-prompt="Help me turn a feeling into a visual concept without taking over my creative decisions.">Start from a feeling</button>
+          <button type="button" data-bv-prompt="Help me build an original character from one core value, one contradiction, and one visual symbol.">Build a character</button>
+          <button type="button" data-bv-prompt="Help me turn an idea into a garment using silhouette, placement, symbolism, material, and color.">Build a garment</button>
+          <button type="button" data-bv-prompt="Talk with me like a friend. Listen first, then help me think through what I am saying without judging me.">Just talk</button>
+          <button type="button" id="bruceVisionLabPrompt">Read my live study</button>
+        </div>
+      </div>
+      <aside class="aiTools">
+        <h3>Make the conversation yours.</h3>
+        <p>Language and lingo are treated as context, never commands. Conversation text stays in this open page.</p>
+        <label for="bruceVisionLanguage">Reply language</label>
+        <select id="bruceVisionLanguage">
+          <option value="auto">Match my message</option><option value="English">English</option><option value="Spanish">Español</option><option value="French">Français</option><option value="Haitian Creole">Kreyòl Ayisyen</option><option value="Portuguese">Português</option><option value="Arabic">العربية</option><option value="Mandarin Chinese">中文</option><option value="Japanese">日本語</option><option value="Korean">한국어</option>
+        </select>
+        <label for="bruceVisionLingo">Your lingo / meanings</label>
+        <textarea id="bruceVisionLingo" maxlength="700" placeholder="Example: ‘locked in’ = fully focused; ‘fire’ = really strong work"></textarea>
+        <label class="aiCheck"><input id="bruceVisionRememberLanguage" type="checkbox">Remember language &amp; lingo on this browser</label>
+        <label class="aiCheck"><input id="bruceVisionSpeak" type="checkbox">Speak replies when this browser supports it</label>
+        <div class="aiVoiceRow"><button class="btn" id="bruceVisionTalk" type="button">Talk</button><button class="btn" id="bruceVisionReplay" type="button">Replay reply</button></div>
+        <div class="aiLoadRow"><button class="btn primary" id="bruceVisionLoad" type="button">Load local AI</button><button class="btn" id="bruceVisionStop" type="button" hidden>Unload</button></div>
+        <div class="aiNotice" id="bruceVisionNotice" aria-live="polite"></div>
+        <div class="aiPrivacy"><p class="aiFine"><strong>Privacy first:</strong> inference runs in this browser after the model/runtime assets load. The chat is session-only. Only language/lingo settings are saved when you explicitly choose to remember them. The model is about 675 MB and may be cached in this site’s private browser storage for faster reuse.</p><p class="aiModel">Qwen2.5 0.5B Instruct · GGUF Q8_0 · wllama 2.3.7 · CPU/WASM · context 1280 · batch 64 · 1 thread · f32 KV</p></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
 <section class="healing-feature" id="healing-sigil">
   <div class="healing-grid">
     <div class="healing-copy reveal">
-      <div class="eyebrow">Featured garment / 00</div>
+      <div class="eyebrow">Archive / Featured garment</div>
       <h2>THE HEALING SIGIL.</h2>
       <p>A signature Eclipse Essence sweatshirt study presented as a centerpiece of the Eclipse Essence design gallery. The composition brings together a dark central emblem, geometric framing, organic linework and a warm ivory garment surface.</p>
       <p>Rather than treating the piece as a product thumbnail, the gallery presents it as a visual artifact: something to study for composition, symbolism, color, placement, garment scale and graphic direction.</p>
@@ -242,22 +311,22 @@ button:not(:disabled),a.btn,a.forgeTop,a.ghost,[role="button"]:not([aria-disable
 <section class="commercePortal" id="shop">
   <div class="commerceGrid">
     <div class="commerceHero reveal">
-      <div class="eyebrow">ECLIPSE ESSENCE / COMMERCE BRIDGE</div>
+      <div class="eyebrow">ECLIPSE ESSENCE / FROM VISION TO OBJECT</div>
       <h2>SEE IT.<br>CHOOSE IT.<br><em>WEAR IT.</em></h2>
-      <p>The visual gallery is the discovery layer. The commerce layer is where a selected garment moves into checkout and production. Square handles customer payment through its hosted checkout, while Printful handles the physical product fulfillment workflow.</p>
+      <p>The gallery is the discovery layer. When Bruce activates a garment for release, its customer-facing checkout belongs with the piece itself. Production and owner tools stay behind the public experience.</p>
       <div class="commerceActions">
-        <a class="btn primary" href="#archive">Shop the design gallery</a>
-        <a class="btn" href="https://squareup.com/dashboard" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Square / Owner Console ↗</a>
+        <a class="btn primary" href="#archive">Explore the design archive</a>
+        <a class="btn" href="#bruce-vision" data-bv-prompt="I’m thinking about turning one of my visual ideas into a wearable piece. Help me decide what should stay symbolic, what should become functional, and what belongs in the garment’s silhouette, placement, material, and color.">Talk through a garment</a>
       </div>
     </div>
     <div class="commerceCards">
       <article class="commerceCard reveal">
-        <div><div class="eyebrow">01 / PAYMENT</div><h3>Square Checkout</h3><p>Use Square-hosted payment links for customer checkout. Product-specific Square links can be attached to each garment card as they are created.</p></div>
-        <a class="btn" href="https://squareup.com/dashboard" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Open Square ↗</a>
+        <div><div class="eyebrow">CUSTOMER LAYER</div><h3>Checkout lives with the drop.</h3><p>When a garment is ready, a public payment link can be attached directly to that piece. Visitors never need access to owner dashboards or production consoles.</p></div>
+        <span class="commerceStatus">Public links only when a drop is live</span>
       </article>
       <article class="commerceCard reveal">
-        <div><div class="eyebrow">02 / PRODUCTION</div><h3>Printful Production</h3><p>Printful can receive the product, variant, customer, shipping and order information through a connected commerce/API workflow and then handle fulfillment.</p></div>
-        <a class="btn" href="https://www.printful.com/dashboard" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Open Printful ↗</a>
+        <div><div class="eyebrow">PRODUCTION LAYER</div><h3>Fulfillment stays backstage.</h3><p>Production can still run through Bruce’s chosen commerce and fulfillment tools, while the public site stays focused on the art, story, fit, and finished object.</p></div>
+        <span class="commerceStatus">Owner workflow stays private</span>
       </article>
     </div>
   </div>
@@ -272,7 +341,7 @@ button:not(:disabled),a.btn,a.forgeTop,a.ghost,[role="button"]:not([aria-disable
 <section class="section" id="art">
   <div class="wrap">
     <div class="sectionhead reveal">
-      <div><div class="eyebrow">02 / Digital art</div><h2>Speculate.<br>Visualize. Refine.</h2></div>
+      <div><div class="eyebrow">Archive / Studio studies</div><h2>Speculate.<br>Visualize. Refine.</h2></div>
       <p class="sectionintro">Digital pieces built from geometry, motion cues, atmosphere and visual systems—made to spark directions for illustrators, designers, animators and architects.</p>
     </div>
     <div class="grid" id="artGrid"></div>
@@ -281,7 +350,7 @@ button:not(:disabled),a.btn,a.forgeTop,a.ghost,[role="button"]:not([aria-disable
 
 <section class="section manifesto">
   <div class="wrap reveal">
-    <div class="eyebrow">03 / Creative principle</div>
+    <div class="eyebrow">Creative principle</div>
     <h2>YOUR VISION DOESN'T NEED TO FIT A TEMPLATE.</h2>
     <p>Use references without becoming a copy. Build worlds without asking permission. Turn an abstract thought into a shape, a scene, a garment, an environment, a character, a structure or a complete visual system.</p>
     <div class="typegrid" id="creators">
@@ -294,47 +363,7 @@ button:not(:disabled),a.btn,a.forgeTop,a.ghost,[role="button"]:not([aria-disable
 </section>
 
 
-<section class="visionAI" id="bruce-vision">
-  <div class="aiWrap">
-    <div class="aiIntro reveal">
-      <div><div class="eyebrow">04 / Local creative friend</div><h2>BRUCE_VISION.</h2></div>
-      <div><p>A privacy-first local AI friend for the Eclipse Vision side of the ecosystem. Bruce_Vision uses the same pinned Qwen2.5 / wllama model family and bounded runtime profile as ECLIPSE STK, with conversation context, language support, and Eclipse Vision awareness built around respectful human communication.</p><p>Bring a feeling, a garment concept, a character, a visual problem, a language question, or just talk. The model can help you think and navigate, but it does not replace your judgment and it does not claim to see artwork you have not described.</p></div>
-    </div>
-    <div class="aiShell reveal">
-      <div class="aiChat">
-        <div class="aiStatus"><span class="aiDot" id="bruceVisionDot"></span><span id="bruceVisionStatus">Local AI is off. Load it when you want to talk.</span></div>
-        <div class="aiLog" id="bruceVisionLog" aria-live="polite" aria-label="Bruce Vision conversation"><div class="aiBubble bot">I’m Bruce_Vision. Load the local AI and talk to me like a friend—about the work, an idea, a language, or whatever you are trying to figure out.</div></div>
-        <div class="aiComposer">
-          <textarea id="bruceVisionInput" maxlength="1800" placeholder="Talk to Bruce_Vision…" aria-label="Message Bruce Vision"></textarea>
-          <button class="btn primary" id="bruceVisionSend" type="button">Send</button>
-        </div>
-        <div class="aiQuick" aria-label="Conversation starters">
-          <button type="button" data-bv-prompt="Help me turn a feeling into a visual concept without taking over my creative decisions.">Start from a feeling</button>
-          <button type="button" data-bv-prompt="Help me build an original character from one core value, one contradiction, and one visual symbol.">Build a character</button>
-          <button type="button" data-bv-prompt="Help me turn an idea into a garment using silhouette, placement, symbolism, material, and color.">Build a garment</button>
-          <button type="button" data-bv-prompt="Talk with me like a friend. Listen first, then help me think through what I am saying without judging me.">Just talk</button>
-          <button type="button" id="bruceVisionLabPrompt">Read my live study</button>
-        </div>
-      </div>
-      <aside class="aiTools">
-        <h3>Make the conversation yours.</h3>
-        <p>Language and lingo are treated as context, never commands. Conversation text stays in this open page.</p>
-        <label for="bruceVisionLanguage">Reply language</label>
-        <select id="bruceVisionLanguage">
-          <option value="auto">Match my message</option><option value="English">English</option><option value="Spanish">Español</option><option value="French">Français</option><option value="Haitian Creole">Kreyòl Ayisyen</option><option value="Portuguese">Português</option><option value="Arabic">العربية</option><option value="Mandarin Chinese">中文</option><option value="Japanese">日本語</option><option value="Korean">한국어</option>
-        </select>
-        <label for="bruceVisionLingo">Your lingo / meanings</label>
-        <textarea id="bruceVisionLingo" maxlength="700" placeholder="Example: ‘locked in’ = fully focused; ‘fire’ = really strong work"></textarea>
-        <label class="aiCheck"><input id="bruceVisionRememberLanguage" type="checkbox">Remember language &amp; lingo on this browser</label>
-        <label class="aiCheck"><input id="bruceVisionSpeak" type="checkbox">Speak replies when this browser supports it</label>
-        <div class="aiVoiceRow"><button class="btn" id="bruceVisionTalk" type="button">Talk</button><button class="btn" id="bruceVisionReplay" type="button">Replay reply</button></div>
-        <div class="aiLoadRow"><button class="btn primary" id="bruceVisionLoad" type="button">Load local AI</button><button class="btn" id="bruceVisionStop" type="button" hidden>Unload</button></div>
-        <div class="aiNotice" id="bruceVisionNotice" aria-live="polite"></div>
-        <div class="aiPrivacy"><p class="aiFine"><strong>Privacy first:</strong> inference runs in this browser after the model/runtime assets load. The chat is session-only. Only language/lingo settings are saved when you explicitly choose to remember them. The model is about 675 MB and may be cached in this site’s private browser storage for faster reuse.</p><p class="aiModel">Qwen2.5 0.5B Instruct · GGUF Q8_0 · wllama 2.3.7 · CPU/WASM · context 1280 · batch 64 · 1 thread · f32 KV</p></div>
-      </aside>
-    </div>
-  </div>
-</section>
+
 
 <section class="section" id="lab">
   <div class="wrap controls">
