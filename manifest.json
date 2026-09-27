@@ -1,0 +1,16 @@
+{
+  "name": "Eclipse Essence",
+  "short_name": "Eclipse Essence",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2d2d49",
+  "theme_color": "#2d2d49",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
